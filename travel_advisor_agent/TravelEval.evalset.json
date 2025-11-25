@@ -1,0 +1,544 @@
+{
+  "eval_set_id": "TravelEval",
+  "name": "TravelEval",
+  "eval_cases": [
+    {
+      "eval_id": "TokyoAugust",
+      "conversation": [
+        {
+          "invocation_id": "e-798398d6-e860-408f-a665-b8821f953687",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hi!"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! How can I assist you with your travel plans today?"
+              }
+            ]
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1756302058.016022
+        },
+        {
+          "invocation_id": "e-e934022e-4274-4501-8cc8-aef20c4d0b31",
+          "user_content": {
+            "parts": [
+              {
+                "text": "I want to go to Tokyo in August"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "That sounds exciting! Tokyo is a vibrant city with plenty to see and do. Let me help you with some essential information to plan your trip.\n\n1. **Weather in August:** I'll check the typical weather conditions during August in Tokyo so you can pack accordingly.\n\n2. **Local Attractions:** I can provide you with a list of must-see attractions and points of interest in Tokyo.\n\n3. **Currency Exchange:** I can also look up the current exchange rate for converting your currency to Japanese Yen.\n\nWould you like me to get all this information for you?"
+              }
+            ]
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1756302065.935937
+        },
+        {
+          "invocation_id": "e-7429922d-6a38-405a-9d26-f53f707d682e",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Yes."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Here's some helpful information for your trip to Tokyo in August:\n\n### Weather in Tokyo\n- **Temperature:** 22°C (about 72°F)\n- **Condition:** Partly cloudy\n- **Humidity:** 65%\n- **Wind:** 12 km/h\n- **Forecast:** Mild weather with occasional clouds expected throughout the day.\n\n### Local Attractions\nTokyo is full of amazing places to visit. Here are some top attractions you might want to consider:\n\n1. **Tokyo Tower**: A famous communications and observation tower with a beautiful view of the city. Rating: 4.5\n2. **Senso-ji**: An ancient Buddhist temple, offering a glimpse into the cultural and historical aspects of Japan. Rating: 4.6\n3. **Shibuya Crossing**: Known as the busiest pedestrian crossing in the world, definitely a must-see! Rating: 4.4\n4. **Meiji Shrine**: A serene Shinto shrine dedicated to Emperor Meiji. Rating: 4.7\n5. **Tokyo Skytree**: Another iconic broadcasting and observation tower, offering breathtaking views. Rating: 4.6\n\n### Currency Exchange\n- **Exchange Rate:** 1 USD = 149.5 JPY\n- This means that if you convert 1 USD, you'll get approximately 149.5 JPY.\n\nFeel free to ask if you need more information or further assistance with your travel plans!"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "call_BsQ8CrvJyWYwpIsPeFn0odtA",
+                "args": {
+                  "location": "Tokyo"
+                },
+                "name": "get_weather"
+              },
+              {
+                "id": "call_4tN3plFludb86jO0ojiHxVFJ",
+                "args": {
+                  "location": "Tokyo"
+                },
+                "name": "get_local_attractions"
+              },
+              {
+                "id": "call_7BPdcftMoKwXFSOgLsuK7qMs",
+                "args": {
+                  "from_currency": "USD",
+                  "to_currency": "JPY"
+                },
+                "name": "get_exchange_rate"
+              }
+            ]
+          },
+          "creation_timestamp": 1756302074.594582
+        }
+      ],
+      "session_input": {
+        "app_name": "travel_advisor_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1756302125.373034
+    },
+    {
+      "eval_id": "Paris.Sept.OneByOne",
+      "conversation": [
+        {
+          "invocation_id": "e-00384eb7-f487-4e63-a443-aa82fd12b891",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hi!"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! How can I assist you with your travel plans today?"
+              }
+            ]
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1756302770.643573
+        },
+        {
+          "invocation_id": "e-dd464fde-9bdc-4029-acca-79188d1950c7",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What is the weather in Paris in September."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "In September, the weather in Paris is generally mild and pleasant. Currently, it's 22°C with partly cloudy skies. There's a humidity level of 65%, and the wind is blowing at 12 km/h. Throughout the day, you can expect mild weather with occasional clouds. It's a great time for sightseeing or enjoying outdoor cafes! If you have any other questions or need additional information about your trip, feel free to ask."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "call_b8rM1lJhFFThc9O3zzOtHVhv",
+                "args": {
+                  "location": "Paris, France"
+                },
+                "name": "get_weather"
+              }
+            ]
+          },
+          "creation_timestamp": 1756302782.234563
+        },
+        {
+          "invocation_id": "e-b05591d4-306f-4435-91cb-e2032c63f98c",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What about the currency?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The current exchange rate for USD to EUR is approximately 0.92. This means that 1 US Dollar would convert to about 0.92 Euros. If you're planning to travel to Paris, it's a good idea to keep this rate in mind for budgeting and expenses.\n\nIf you need any assistance with currency exchange, local attractions, or anything else for your trip to Paris, feel free to let me know!"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "call_klI8IhPWHnEu8DbHvHYY8678",
+                "args": {
+                  "from_currency": "USD",
+                  "to_currency": "EUR",
+                  "amount": 1
+                },
+                "name": "get_exchange_rate"
+              }
+            ]
+          },
+          "creation_timestamp": 1756302790.098091
+        },
+        {
+          "invocation_id": "e-10f522df-341f-408a-b02c-4ecc696a10f4",
+          "user_content": {
+            "parts": [
+              {
+                "text": "And landmarks?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Here are some popular landmarks and attractions you might want to visit in Paris:\n\n1. **Eiffel Tower**: An iconic symbol of Paris, offering stunning views of the city from the top.\n\n2. **Louvre Museum**: Home to thousands of works of art, including the Mona Lisa and the Venus de Milo.\n\n3. **Notre-Dame Cathedral**: A masterpiece of French Gothic architecture, with intricate sculptures and stained-glass windows.\n\n4. **Montmartre**: This historic district is known for its bohemian atmosphere, the Sacré-Cœur Basilica, and artistic history.\n\n5. **Champs-Élysées and Arc de Triomphe**: A famous avenue that's perfect for shopping and dining, ending at the impressive Arc de Triomphe.\n\n6. **Seine River Cruise**: A relaxing way to see many of Paris's famous sites from the water.\n\n7. **Palace of Versailles**: Although not in the city center, it's a must-visit for its grand palace and amazing gardens.\n\nThese landmarks offer a mix of cultural, historical, and modern experiences that capture the essence of Paris. If you have any specific interests or need more recommendations, feel free to ask!"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "call_B8IQkCorcuUFyKJfprJ98Fr8",
+                "args": {
+                  "location": "Paris, France"
+                },
+                "name": "get_local_attractions"
+              }
+            ]
+          },
+          "creation_timestamp": 1756302800.331168
+        }
+      ],
+      "session_input": {
+        "app_name": "travel_advisor_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1756302826.731252
+    },
+    {
+      "eval_id": "cased53e2f",
+      "conversation": [
+        {
+          "invocation_id": "e-37cab755-76c4-48ea-88f6-f54c29ed6750",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1764050565.349806
+        },
+        {
+          "invocation_id": "e-d61257dc-4cff-40f0-a89b-78349f8e3328",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hi there! Welcome onboard. How can I help with your travel planning today? \n\nIf you share a city or country, I can:\n- Check the current weather and forecast\n- Suggest popular attractions and things to do\n- Provide up-to-date currency exchange rates and practical conversions\n\nWant to start with a destination? Or tell me a bit about your interests (food, outdoors, history, family, nightlife) and I’ll tailor some ideas."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1764050586.631397
+        },
+        {
+          "invocation_id": "e-dc231cf5-8194-49ca-82bb-9668f27eac56",
+          "user_content": {
+            "parts": [
+              {
+                "text": "i want to go to Tokyo in August"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Great choice—Tokyo in August is lively, though it’s hot and humid. Here’s a quick snapshot based on what I’ve got:\n\nCurrent conditions in Tokyo\n- Temperature: 22°C\n- Weather: Partly cloudy\n- Humidity: 65%\n- Wind: 12 km/h\n- Forecast: Mild weather with occasional clouds\n\nAugust-specific tips\n- It’s hot and very humid, with intermittent rain and the possibility of typhoons later in the season.\n- Plan outdoor activities for early mornings or evenings; save the middle of the day for indoor experiences, air-conditioned venues, or a cooling break at a cafe.\n- Stay hydrated, wear light clothing, sunscreen, and bring a compact umbrella or rain jacket for sudden showers.\n- Use Tokyo’s excellent public transit (JR/Metro) to minimize heat exposure between sights.\n- Summer festivals and fireworks are common—dates vary, so I can look up events for your exact dates if you want.\n\nTop attractions to consider (highly rated, easy to fit into a summer itinerary)\n- Tokyo Tower (landmark) – 4.5/5\n  A classic observation tower with great city views.\n- Senso-ji (temple) – 4.6/5\n  Tokyo’s oldest temple, in vibrant Asakusa; lots of shops along Nakamise Street.\n- Shibuya Crossing (landmark) – 4.4/5\n  Iconic scramble crossing; great for people-watching and nearby shopping.\n- Meiji Shrine (shrine) – 4.7/5\n  Tranquil forested grounds near Harajuku; a nice counterpoint to bustling neighborhoods.\n- Tokyo Skytree (tower) – 4.6/5\n  Tallest structure with stunning panoramas; great to visit when the weather is clear.\n\nWould you like me to:\n- Create a quick 3-day or 5-day summer itinerary around these spots (with indoor/outdoor balance and meal suggestions)?\n- Check a forecast for your exact August dates (and suggest optimal day-by-day plans)?\n- Look up current or practical currency info (e.g., USD to JPY rates) for budgeting? If so, tell me your budget range and preferred currencies."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "TravelAdvisorAgent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_bVW0E3BrKxzVLkA5356bbmNq",
+                        "args": {
+                          "location": "Tokyo"
+                        },
+                        "name": "get_weather"
+                      }
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_x8v05vPXqrewWuj9caP2qKwD",
+                        "args": {
+                          "location": "Tokyo",
+                          "category": "all"
+                        },
+                        "name": "get_local_attractions"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "TravelAdvisorAgent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_bVW0E3BrKxzVLkA5356bbmNq",
+                        "name": "get_weather",
+                        "response": {
+                          "location": "Tokyo",
+                          "temperature": "22°C",
+                          "condition": "Partly cloudy",
+                          "humidity": "65%",
+                          "wind": "12 km/h",
+                          "forecast": "Mild weather with occasional clouds expected throughout the day"
+                        }
+                      }
+                    },
+                    {
+                      "function_response": {
+                        "id": "call_x8v05vPXqrewWuj9caP2qKwD",
+                        "name": "get_local_attractions",
+                        "response": {
+                          "location": "Tokyo",
+                          "category": "all",
+                          "attractions": [
+                            {
+                              "name": "Tokyo Tower",
+                              "type": "landmark",
+                              "rating": 4.5,
+                              "description": "Communications and observation tower"
+                            },
+                            {
+                              "name": "Senso-ji",
+                              "type": "temple",
+                              "rating": 4.6,
+                              "description": "Ancient Buddhist temple"
+                            },
+                            {
+                              "name": "Shibuya Crossing",
+                              "type": "landmark",
+                              "rating": 4.4,
+                              "description": "Busiest pedestrian crossing"
+                            },
+                            {
+                              "name": "Meiji Shrine",
+                              "type": "shrine",
+                              "rating": 4.7,
+                              "description": "Shinto shrine dedicated to Emperor Meiji"
+                            },
+                            {
+                              "name": "Tokyo Skytree",
+                              "type": "tower",
+                              "rating": 4.6,
+                              "description": "Broadcasting and observation tower"
+                            }
+                          ],
+                          "total_count": 5
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1764050610.010947
+        }
+      ],
+      "session_input": {
+        "app_name": "travel_advisor_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1764050689.340513
+    },
+    {
+      "eval_id": "case0196de",
+      "conversation": [
+        {
+          "invocation_id": "e-37cab755-76c4-48ea-88f6-f54c29ed6750",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1764050565.349806
+        },
+        {
+          "invocation_id": "e-d61257dc-4cff-40f0-a89b-78349f8e3328",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hi there! Welcome onboard. How can I help with your travel planning today? \n\nIf you share a city or country, I can:\n- Check the current weather and forecast\n- Suggest popular attractions and things to do\n- Provide up-to-date currency exchange rates and practical conversions\n\nWant to start with a destination? Or tell me a bit about your interests (food, outdoors, history, family, nightlife) and I’ll tailor some ideas."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1764050586.631397
+        },
+        {
+          "invocation_id": "e-dc231cf5-8194-49ca-82bb-9668f27eac56",
+          "user_content": {
+            "parts": [
+              {
+                "text": "i want to go to Tokyo in August"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Great choice—Tokyo in August is lively, though it’s hot and humid. Here’s a quick snapshot based on what I’ve got:\n\nCurrent conditions in Tokyo\n- Temperature: 22°C\n- Weather: Partly cloudy\n- Humidity: 65%\n- Wind: 12 km/h\n- Forecast: Mild weather with occasional clouds\n\nAugust-specific tips\n- It’s hot and very humid, with intermittent rain and the possibility of typhoons later in the season.\n- Plan outdoor activities for early mornings or evenings; save the middle of the day for indoor experiences, air-conditioned venues, or a cooling break at a cafe.\n- Stay hydrated, wear light clothing, sunscreen, and bring a compact umbrella or rain jacket for sudden showers.\n- Use Tokyo’s excellent public transit (JR/Metro) to minimize heat exposure between sights.\n- Summer festivals and fireworks are common—dates vary, so I can look up events for your exact dates if you want.\n\nTop attractions to consider (highly rated, easy to fit into a summer itinerary)\n- Tokyo Tower (landmark) – 4.5/5\n  A classic observation tower with great city views.\n- Senso-ji (temple) – 4.6/5\n  Tokyo’s oldest temple, in vibrant Asakusa; lots of shops along Nakamise Street.\n- Shibuya Crossing (landmark) – 4.4/5\n  Iconic scramble crossing; great for people-watching and nearby shopping.\n- Meiji Shrine (shrine) – 4.7/5\n  Tranquil forested grounds near Harajuku; a nice counterpoint to bustling neighborhoods.\n- Tokyo Skytree (tower) – 4.6/5\n  Tallest structure with stunning panoramas; great to visit when the weather is clear.\n\nWould you like me to:\n- Create a quick 3-day or 5-day summer itinerary around these spots (with indoor/outdoor balance and meal suggestions)?\n- Check a forecast for your exact August dates (and suggest optimal day-by-day plans)?\n- Look up current or practical currency info (e.g., USD to JPY rates) for budgeting? If so, tell me your budget range and preferred currencies."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "TravelAdvisorAgent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_bVW0E3BrKxzVLkA5356bbmNq",
+                        "args": {
+                          "location": "Tokyo"
+                        },
+                        "name": "get_weather"
+                      }
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_x8v05vPXqrewWuj9caP2qKwD",
+                        "args": {
+                          "location": "Tokyo",
+                          "category": "all"
+                        },
+                        "name": "get_local_attractions"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "TravelAdvisorAgent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_bVW0E3BrKxzVLkA5356bbmNq",
+                        "name": "get_weather",
+                        "response": {
+                          "location": "Tokyo",
+                          "temperature": "22°C",
+                          "condition": "Partly cloudy",
+                          "humidity": "65%",
+                          "wind": "12 km/h",
+                          "forecast": "Mild weather with occasional clouds expected throughout the day"
+                        }
+                      }
+                    },
+                    {
+                      "function_response": {
+                        "id": "call_x8v05vPXqrewWuj9caP2qKwD",
+                        "name": "get_local_attractions",
+                        "response": {
+                          "location": "Tokyo",
+                          "category": "all",
+                          "attractions": [
+                            {
+                              "name": "Tokyo Tower",
+                              "type": "landmark",
+                              "rating": 4.5,
+                              "description": "Communications and observation tower"
+                            },
+                            {
+                              "name": "Senso-ji",
+                              "type": "temple",
+                              "rating": 4.6,
+                              "description": "Ancient Buddhist temple"
+                            },
+                            {
+                              "name": "Shibuya Crossing",
+                              "type": "landmark",
+                              "rating": 4.4,
+                              "description": "Busiest pedestrian crossing"
+                            },
+                            {
+                              "name": "Meiji Shrine",
+                              "type": "shrine",
+                              "rating": 4.7,
+                              "description": "Shinto shrine dedicated to Emperor Meiji"
+                            },
+                            {
+                              "name": "Tokyo Skytree",
+                              "type": "tower",
+                              "rating": 4.6,
+                              "description": "Broadcasting and observation tower"
+                            }
+                          ],
+                          "total_count": 5
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1764050610.010947
+        }
+      ],
+      "session_input": {
+        "app_name": "travel_advisor_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1764050717.1352227
+    }
+  ],
+  "creation_timestamp": 1756301635.211605
+}
